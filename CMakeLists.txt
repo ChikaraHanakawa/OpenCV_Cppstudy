@@ -1,6 +1,6 @@
 # 変数SOURCE_CORDEを宣言し、opencv_testという値を入れる。
 # cmake -D SOURCE_CODE=(ソース名)で上書き可
-set(SOURCE_CODE test CACHE NAME "Target object name")
+set(SOURCE_CODE image CACHE NAME "Target object name")
 
 # CMakeの最低バージョンを記述
 cmake_minimum_required(VERSION 2.8)

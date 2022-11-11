@@ -23,6 +23,9 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Produce verbose output by default.
+VERBOSE = 1
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -48,17 +51,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy
+CMAKE_SOURCE_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
+CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	@echo "Running CMake to regenerate build system..."
 	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
@@ -69,7 +72,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	@echo "No interactive CMake dialog available..."
 	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
@@ -79,10 +82,10 @@ edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
 # The main all target
-all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles/progress.marks
+all:
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp/CMakeFiles /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -105,74 +108,61 @@ preinstall/fast:
 	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
-# clear depends
-depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
-.PHONY : depend
-
 #=============================================================================
-# Target rules for targets named image
+# Target rules for targets named cmTC_ac001
 
 # Build rule for target.
-image: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 image
-.PHONY : image
+cmTC_ac001:
+	$(MAKE) -f CMakeFiles/Makefile2 cmTC_ac001
+.PHONY : cmTC_ac001
 
 # fast build rule for target.
-image/fast:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
-.PHONY : image/fast
+cmTC_ac001/fast:
+	$(MAKE) -f CMakeFiles/cmTC_ac001.dir/build.make CMakeFiles/cmTC_ac001.dir/build
+.PHONY : cmTC_ac001/fast
 
-image.o: image.cpp.o
+src.o: src.cxx.o
 
-.PHONY : image.o
+.PHONY : src.o
 
 # target to build an object file
-image.cpp.o:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.o
-.PHONY : image.cpp.o
+src.cxx.o:
+	$(MAKE) -f CMakeFiles/cmTC_ac001.dir/build.make CMakeFiles/cmTC_ac001.dir/src.cxx.o
+.PHONY : src.cxx.o
 
-image.i: image.cpp.i
+src.i: src.cxx.i
 
-.PHONY : image.i
+.PHONY : src.i
 
 # target to preprocess a source file
-image.cpp.i:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.i
-.PHONY : image.cpp.i
+src.cxx.i:
+	$(MAKE) -f CMakeFiles/cmTC_ac001.dir/build.make CMakeFiles/cmTC_ac001.dir/src.cxx.i
+.PHONY : src.cxx.i
 
-image.s: image.cpp.s
+src.s: src.cxx.s
 
-.PHONY : image.s
+.PHONY : src.s
 
 # target to generate assembly for a file
-image.cpp.s:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.s
-.PHONY : image.cpp.s
+src.cxx.s:
+	$(MAKE) -f CMakeFiles/cmTC_ac001.dir/build.make CMakeFiles/cmTC_ac001.dir/src.cxx.s
+.PHONY : src.cxx.s
 
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
-	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... image"
-	@echo "... image.o"
-	@echo "... image.i"
-	@echo "... image.s"
+	@echo "... cmTC_ac001"
+	@echo "... src.o"
+	@echo "... src.i"
+	@echo "... src.s"
 .PHONY : help
 
 
 
 #=============================================================================
 # Special targets to cleanup operation of make.
-
-# Special rule to run CMake to check the build system integrity.
-# No rule that depends on this can have commands that come from listfiles
-# because they might be regenerated.
-cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
-.PHONY : cmake_check_build_system
 
