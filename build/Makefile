@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named image
+# Target rules for targets named cvt
 
 # Build rule for target.
-image: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 image
-.PHONY : image
+cvt: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cvt
+.PHONY : cvt
 
 # fast build rule for target.
-image/fast:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
-.PHONY : image/fast
+cvt/fast:
+	$(MAKE) -f CMakeFiles/cvt.dir/build.make CMakeFiles/cvt.dir/build
+.PHONY : cvt/fast
 
-image.o: image.cpp.o
+cvt.o: cvt.cpp.o
 
-.PHONY : image.o
+.PHONY : cvt.o
 
 # target to build an object file
-image.cpp.o:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.o
-.PHONY : image.cpp.o
+cvt.cpp.o:
+	$(MAKE) -f CMakeFiles/cvt.dir/build.make CMakeFiles/cvt.dir/cvt.cpp.o
+.PHONY : cvt.cpp.o
 
-image.i: image.cpp.i
+cvt.i: cvt.cpp.i
 
-.PHONY : image.i
+.PHONY : cvt.i
 
 # target to preprocess a source file
-image.cpp.i:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.i
-.PHONY : image.cpp.i
+cvt.cpp.i:
+	$(MAKE) -f CMakeFiles/cvt.dir/build.make CMakeFiles/cvt.dir/cvt.cpp.i
+.PHONY : cvt.cpp.i
 
-image.s: image.cpp.s
+cvt.s: cvt.cpp.s
 
-.PHONY : image.s
+.PHONY : cvt.s
 
 # target to generate assembly for a file
-image.cpp.s:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.s
-.PHONY : image.cpp.s
+cvt.cpp.s:
+	$(MAKE) -f CMakeFiles/cvt.dir/build.make CMakeFiles/cvt.dir/cvt.cpp.s
+.PHONY : cvt.cpp.s
 
 # Help Target
 help:
@@ -156,12 +156,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... image"
-	@echo "... image.o"
-	@echo "... image.i"
-	@echo "... image.s"
+	@echo "... rebuild_cache"
+	@echo "... cvt"
+	@echo "... cvt.o"
+	@echo "... cvt.i"
+	@echo "... cvt.s"
 .PHONY : help
 
 

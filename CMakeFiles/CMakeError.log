@@ -148,3 +148,28 @@ make[1]: ディレクトリ '/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMak
 
 ===== END =====
 
+Build output check failed:
+    Regex: 'argument .* is not valid'
+    Output line: 'cc1: warning: ‘-Werror=’ argument ‘-Werror=non-virtual-dtor’ is not valid for C'
+Compilation failed:
+    source file: '/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type  -Werror=non-virtual-dtor'
+===== BUILD LOG =====
+Change Dir: /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e82bd/fast && /usr/bin/make -f CMakeFiles/cmTC_e82bd.dir/build.make CMakeFiles/cmTC_e82bd.dir/build
+make[1]: ディレクトリ '/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp' に入ります
+Building C object CMakeFiles/cmTC_e82bd.dir/src.c.o
+/usr/bin/cc   -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type  -Werror=non-virtual-dtor -o CMakeFiles/cmTC_e82bd.dir/src.c.o   -c /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp/src.c
+cc1: warning: ‘-Werror=’ argument ‘-Werror=non-virtual-dtor’ is not valid for C
+/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring #pragma   [-Wunknown-pragmas]
+    1 | #pragma
+      | 
+Linking C executable cmTC_e82bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e82bd.dir/link.txt --verbose=1
+/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_e82bd.dir/src.c.o  -o cmTC_e82bd 
+make[1]: ディレクトリ '/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp' から出ます
+
+
+===== END =====
+

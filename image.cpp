@@ -8,7 +8,7 @@ std::string win_src = "src";
 std::string win_dst = "dst";
 
 int main(){
-  std::string file_src = "/home/chikara/Pictures/waifu.png";
+  std::string file_src = "/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/images/waifu.png";
   std::string file_dst = "mirror.png";
   cv::Mat img_src = cv::imread(file_src, 1);
 
