@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/cvt.dir/all
+all: CMakeFiles/depth.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/cvt.dir/clean
+clean: CMakeFiles/depth.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/cvt.dir
+# Target rules for target CMakeFiles/depth.dir
 
 # All Build rule for target.
-CMakeFiles/cvt.dir/all:
-	$(MAKE) -f CMakeFiles/cvt.dir/build.make CMakeFiles/cvt.dir/depend
-	$(MAKE) -f CMakeFiles/cvt.dir/build.make CMakeFiles/cvt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target cvt"
-.PHONY : CMakeFiles/cvt.dir/all
+CMakeFiles/depth.dir/all:
+	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/depend
+	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target depth"
+.PHONY : CMakeFiles/depth.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cvt.dir/rule: cmake_check_build_system
+CMakeFiles/depth.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cvt.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/depth.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 0
-.PHONY : CMakeFiles/cvt.dir/rule
+.PHONY : CMakeFiles/depth.dir/rule
 
 # Convenience name for target.
-cvt: CMakeFiles/cvt.dir/rule
+depth: CMakeFiles/depth.dir/rule
 
-.PHONY : cvt
+.PHONY : depth
 
 # clean rule for target.
-CMakeFiles/cvt.dir/clean:
-	$(MAKE) -f CMakeFiles/cvt.dir/build.make CMakeFiles/cvt.dir/clean
-.PHONY : CMakeFiles/cvt.dir/clean
+CMakeFiles/depth.dir/clean:
+	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/clean
+.PHONY : CMakeFiles/depth.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

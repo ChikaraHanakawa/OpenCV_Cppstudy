@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cvt
+# Target rules for targets named depth
 
 # Build rule for target.
-cvt: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cvt
-.PHONY : cvt
+depth: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 depth
+.PHONY : depth
 
 # fast build rule for target.
-cvt/fast:
-	$(MAKE) -f CMakeFiles/cvt.dir/build.make CMakeFiles/cvt.dir/build
-.PHONY : cvt/fast
+depth/fast:
+	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/build
+.PHONY : depth/fast
 
-cvt.o: cvt.cpp.o
+depth.o: depth.cpp.o
 
-.PHONY : cvt.o
+.PHONY : depth.o
 
 # target to build an object file
-cvt.cpp.o:
-	$(MAKE) -f CMakeFiles/cvt.dir/build.make CMakeFiles/cvt.dir/cvt.cpp.o
-.PHONY : cvt.cpp.o
+depth.cpp.o:
+	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/depth.cpp.o
+.PHONY : depth.cpp.o
 
-cvt.i: cvt.cpp.i
+depth.i: depth.cpp.i
 
-.PHONY : cvt.i
+.PHONY : depth.i
 
 # target to preprocess a source file
-cvt.cpp.i:
-	$(MAKE) -f CMakeFiles/cvt.dir/build.make CMakeFiles/cvt.dir/cvt.cpp.i
-.PHONY : cvt.cpp.i
+depth.cpp.i:
+	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/depth.cpp.i
+.PHONY : depth.cpp.i
 
-cvt.s: cvt.cpp.s
+depth.s: depth.cpp.s
 
-.PHONY : cvt.s
+.PHONY : depth.s
 
 # target to generate assembly for a file
-cvt.cpp.s:
-	$(MAKE) -f CMakeFiles/cvt.dir/build.make CMakeFiles/cvt.dir/cvt.cpp.s
-.PHONY : cvt.cpp.s
+depth.cpp.s:
+	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/depth.cpp.s
+.PHONY : depth.cpp.s
 
 # Help Target
 help:
@@ -156,12 +156,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cvt"
-	@echo "... cvt.o"
-	@echo "... cvt.i"
-	@echo "... cvt.s"
+	@echo "... edit_cache"
+	@echo "... depth"
+	@echo "... depth.o"
+	@echo "... depth.i"
+	@echo "... depth.s"
 .PHONY : help
 
 

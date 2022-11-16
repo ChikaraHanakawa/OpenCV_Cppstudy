@@ -7,37 +7,36 @@
 std::string win_src = "src";
 std::string win_dst = "dst";
 
-int main(int argc, char **argv){
-  cv::Mat img_src, img_dst;
-  cv::Mat img_hsv, img_bin;
+int main(){
+  std::string file_src = "/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/images/ball.JPG";
+  cv::Mat img_dst, img_hsv, img_bin;
+  cv::Mat resize_src, resize_hsv, resize_dst;
+  cv::Mat img_src = cv::imread(file_src, 1);
 
-  cv::VideoCapture capture(0);
-  if(!capture.isOpened()){
+  if(!img_src.data){
     std::cout << "error" << std::endl;
-    return 0;
-    }
+    return -1;
+  }
 
   cv::cvtColor(img_src, img_hsv, cv::COLOR_BGR2HSV, 3);
 
-  //cv::Scalar under = cv::Scalar(50, 50, 50);
-  //cv::Scalar high = cv::Scalar(80, 255, 255);
+  cv::Scalar under = cv::Scalar(0, 50, 50);
+  cv::Scalar high = cv::Scalar(50, 200, 200);
 
-  cv::inRange(img_hsv, 255, 100, img_bin);
+  cv::inRange(img_hsv, under, high, img_bin);
   img_src.copyTo(img_dst, img_bin);
 
-  //cv::namedWindow(win_src, cv::WINDOW_AUTOSIZE);
-  //cv::namedWindow(win_dst, cv::WINDOW_AUTOSIZE);
+  cv::resize(img_src, resize_src, cv::Size(), 0.2, 0.2);
+  cv::resize(img_hsv, resize_hsv, cv::Size(), 0.2, 0.2);
+  cv::resize(img_dst, resize_dst, cv::Size(), 0.2, 0.2);
 
-  while(1){
-    capture >> img_src;
-    //cv::flip(img_src, img_dst, 0);
-    
-    cv::imshow(win_src, img_src);
-    cv::imshow(win_dst, img_dst);
+  cv::namedWindow(win_src, cv::WINDOW_AUTOSIZE);
+  cv::namedWindow(win_dst, cv::WINDOW_AUTOSIZE);
 
-    if(cv::waitKey(1) == 'q') break;
-  }
+  cv::imshow(win_src, resize_src);
+  cv::imshow("hsv", resize_hsv);
+  cv::imshow(win_dst, resize_dst);
 
-  capture.release();
+  cv::waitKey(0);
   return 0;
 }
