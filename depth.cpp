@@ -18,12 +18,12 @@ int main(){
     return -1;
   }
 
-  cv::cvtColor(img_src, img_hsv, cv::COLOR_BGR2HSV, 3);
-
-  cv::Scalar under = cv::Scalar(0, 50, 50);
+  cv::Scalar low = cv::Scalar(0, 50, 50);
   cv::Scalar high = cv::Scalar(50, 200, 200);
 
-  cv::inRange(img_hsv, under, high, img_bin);
+  cv::cvtColor(img_src, img_hsv, cv::COLOR_BGR2HSV, 3);
+
+  cv::inRange(img_hsv, low, high, img_bin);
   img_src.copyTo(img_dst, img_bin);
 
   cv::resize(img_src, resize_src, cv::Size(), 0.2, 0.2);
