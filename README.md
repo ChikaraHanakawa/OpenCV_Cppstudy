@@ -20,3 +20,4 @@ ___
   ./(実行ファイル名)
   ```
 > [参考資料・引用元](https://qiita.com/kekenonono/items/0fcf042bca2d3d17867a)
+> [OpenCVについての参考資料](https://www.kspub.co.jp/book/detail/1538290.html)
