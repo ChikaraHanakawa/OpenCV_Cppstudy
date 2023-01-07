@@ -51,5 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/depth.dir/DependInfo.cmake"
+  "CMakeFiles/frequency_table.dir/DependInfo.cmake"
   )

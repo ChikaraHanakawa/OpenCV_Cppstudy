@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named depth
+# Target rules for targets named frequency_table
 
 # Build rule for target.
-depth: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 depth
-.PHONY : depth
+frequency_table: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 frequency_table
+.PHONY : frequency_table
 
 # fast build rule for target.
-depth/fast:
-	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/build
-.PHONY : depth/fast
+frequency_table/fast:
+	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/build
+.PHONY : frequency_table/fast
 
-depth.o: depth.cpp.o
+frequency_table.o: frequency_table.cpp.o
 
-.PHONY : depth.o
+.PHONY : frequency_table.o
 
 # target to build an object file
-depth.cpp.o:
-	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/depth.cpp.o
-.PHONY : depth.cpp.o
+frequency_table.cpp.o:
+	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/frequency_table.cpp.o
+.PHONY : frequency_table.cpp.o
 
-depth.i: depth.cpp.i
+frequency_table.i: frequency_table.cpp.i
 
-.PHONY : depth.i
+.PHONY : frequency_table.i
 
 # target to preprocess a source file
-depth.cpp.i:
-	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/depth.cpp.i
-.PHONY : depth.cpp.i
+frequency_table.cpp.i:
+	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/frequency_table.cpp.i
+.PHONY : frequency_table.cpp.i
 
-depth.s: depth.cpp.s
+frequency_table.s: frequency_table.cpp.s
 
-.PHONY : depth.s
+.PHONY : frequency_table.s
 
 # target to generate assembly for a file
-depth.cpp.s:
-	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/depth.cpp.s
-.PHONY : depth.cpp.s
+frequency_table.cpp.s:
+	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/frequency_table.cpp.s
+.PHONY : frequency_table.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... depth"
-	@echo "... depth.o"
-	@echo "... depth.i"
-	@echo "... depth.s"
+	@echo "... frequency_table"
+	@echo "... frequency_table.o"
+	@echo "... frequency_table.i"
+	@echo "... frequency_table.s"
 .PHONY : help
 
 

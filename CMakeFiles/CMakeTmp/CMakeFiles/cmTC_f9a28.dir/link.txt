@@ -1,1 +1,0 @@
-/usr/bin/cc   -O3 -DNDEBUG    CMakeFiles/cmTC_f9a28.dir/src.c.o  -o cmTC_f9a28 

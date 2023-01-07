@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp/src.c" "/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_f9a28.dir/src.c.o"
+  "/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp/src.c" "/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_c9382.dir/src.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

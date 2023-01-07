@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/depth.dir/all
+all: CMakeFiles/frequency_table.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/depth.dir/clean
+clean: CMakeFiles/frequency_table.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/depth.dir
+# Target rules for target CMakeFiles/frequency_table.dir
 
 # All Build rule for target.
-CMakeFiles/depth.dir/all:
-	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/depend
-	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target depth"
-.PHONY : CMakeFiles/depth.dir/all
+CMakeFiles/frequency_table.dir/all:
+	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/depend
+	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target frequency_table"
+.PHONY : CMakeFiles/frequency_table.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/depth.dir/rule: cmake_check_build_system
+CMakeFiles/frequency_table.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/depth.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/frequency_table.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 0
-.PHONY : CMakeFiles/depth.dir/rule
+.PHONY : CMakeFiles/frequency_table.dir/rule
 
 # Convenience name for target.
-depth: CMakeFiles/depth.dir/rule
+frequency_table: CMakeFiles/frequency_table.dir/rule
 
-.PHONY : depth
+.PHONY : frequency_table
 
 # clean rule for target.
-CMakeFiles/depth.dir/clean:
-	$(MAKE) -f CMakeFiles/depth.dir/build.make CMakeFiles/depth.dir/clean
-.PHONY : CMakeFiles/depth.dir/clean
+CMakeFiles/frequency_table.dir/clean:
+	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/clean
+.PHONY : CMakeFiles/frequency_table.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
