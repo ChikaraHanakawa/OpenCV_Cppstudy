@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/frequency_table.dir/all
+all: CMakeFiles/gamma.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/frequency_table.dir/clean
+clean: CMakeFiles/gamma.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/frequency_table.dir
+# Target rules for target CMakeFiles/gamma.dir
 
 # All Build rule for target.
-CMakeFiles/frequency_table.dir/all:
-	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/depend
-	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target frequency_table"
-.PHONY : CMakeFiles/frequency_table.dir/all
+CMakeFiles/gamma.dir/all:
+	$(MAKE) -f CMakeFiles/gamma.dir/build.make CMakeFiles/gamma.dir/depend
+	$(MAKE) -f CMakeFiles/gamma.dir/build.make CMakeFiles/gamma.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target gamma"
+.PHONY : CMakeFiles/gamma.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/frequency_table.dir/rule: cmake_check_build_system
+CMakeFiles/gamma.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/frequency_table.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gamma.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 0
-.PHONY : CMakeFiles/frequency_table.dir/rule
+.PHONY : CMakeFiles/gamma.dir/rule
 
 # Convenience name for target.
-frequency_table: CMakeFiles/frequency_table.dir/rule
+gamma: CMakeFiles/gamma.dir/rule
 
-.PHONY : frequency_table
+.PHONY : gamma
 
 # clean rule for target.
-CMakeFiles/frequency_table.dir/clean:
-	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/clean
-.PHONY : CMakeFiles/frequency_table.dir/clean
+CMakeFiles/gamma.dir/clean:
+	$(MAKE) -f CMakeFiles/gamma.dir/build.make CMakeFiles/gamma.dir/clean
+.PHONY : CMakeFiles/gamma.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

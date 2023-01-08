@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named frequency_table
+# Target rules for targets named gamma
 
 # Build rule for target.
-frequency_table: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 frequency_table
-.PHONY : frequency_table
+gamma: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gamma
+.PHONY : gamma
 
 # fast build rule for target.
-frequency_table/fast:
-	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/build
-.PHONY : frequency_table/fast
+gamma/fast:
+	$(MAKE) -f CMakeFiles/gamma.dir/build.make CMakeFiles/gamma.dir/build
+.PHONY : gamma/fast
 
-frequency_table.o: frequency_table.cpp.o
+gamma.o: gamma.cpp.o
 
-.PHONY : frequency_table.o
+.PHONY : gamma.o
 
 # target to build an object file
-frequency_table.cpp.o:
-	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/frequency_table.cpp.o
-.PHONY : frequency_table.cpp.o
+gamma.cpp.o:
+	$(MAKE) -f CMakeFiles/gamma.dir/build.make CMakeFiles/gamma.dir/gamma.cpp.o
+.PHONY : gamma.cpp.o
 
-frequency_table.i: frequency_table.cpp.i
+gamma.i: gamma.cpp.i
 
-.PHONY : frequency_table.i
+.PHONY : gamma.i
 
 # target to preprocess a source file
-frequency_table.cpp.i:
-	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/frequency_table.cpp.i
-.PHONY : frequency_table.cpp.i
+gamma.cpp.i:
+	$(MAKE) -f CMakeFiles/gamma.dir/build.make CMakeFiles/gamma.dir/gamma.cpp.i
+.PHONY : gamma.cpp.i
 
-frequency_table.s: frequency_table.cpp.s
+gamma.s: gamma.cpp.s
 
-.PHONY : frequency_table.s
+.PHONY : gamma.s
 
 # target to generate assembly for a file
-frequency_table.cpp.s:
-	$(MAKE) -f CMakeFiles/frequency_table.dir/build.make CMakeFiles/frequency_table.dir/frequency_table.cpp.s
-.PHONY : frequency_table.cpp.s
+gamma.cpp.s:
+	$(MAKE) -f CMakeFiles/gamma.dir/build.make CMakeFiles/gamma.dir/gamma.cpp.s
+.PHONY : gamma.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... frequency_table"
-	@echo "... frequency_table.o"
-	@echo "... frequency_table.i"
-	@echo "... frequency_table.s"
+	@echo "... gamma"
+	@echo "... gamma.o"
+	@echo "... gamma.i"
+	@echo "... gamma.s"
 .PHONY : help
 
 
