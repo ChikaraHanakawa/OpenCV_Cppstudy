@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named gamma
+# Target rules for targets named negaposi
 
 # Build rule for target.
-gamma: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gamma
-.PHONY : gamma
+negaposi: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 negaposi
+.PHONY : negaposi
 
 # fast build rule for target.
-gamma/fast:
-	$(MAKE) -f CMakeFiles/gamma.dir/build.make CMakeFiles/gamma.dir/build
-.PHONY : gamma/fast
+negaposi/fast:
+	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/build
+.PHONY : negaposi/fast
 
-gamma.o: gamma.cpp.o
+negaposi.o: negaposi.cpp.o
 
-.PHONY : gamma.o
+.PHONY : negaposi.o
 
 # target to build an object file
-gamma.cpp.o:
-	$(MAKE) -f CMakeFiles/gamma.dir/build.make CMakeFiles/gamma.dir/gamma.cpp.o
-.PHONY : gamma.cpp.o
+negaposi.cpp.o:
+	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/negaposi.cpp.o
+.PHONY : negaposi.cpp.o
 
-gamma.i: gamma.cpp.i
+negaposi.i: negaposi.cpp.i
 
-.PHONY : gamma.i
+.PHONY : negaposi.i
 
 # target to preprocess a source file
-gamma.cpp.i:
-	$(MAKE) -f CMakeFiles/gamma.dir/build.make CMakeFiles/gamma.dir/gamma.cpp.i
-.PHONY : gamma.cpp.i
+negaposi.cpp.i:
+	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/negaposi.cpp.i
+.PHONY : negaposi.cpp.i
 
-gamma.s: gamma.cpp.s
+negaposi.s: negaposi.cpp.s
 
-.PHONY : gamma.s
+.PHONY : negaposi.s
 
 # target to generate assembly for a file
-gamma.cpp.s:
-	$(MAKE) -f CMakeFiles/gamma.dir/build.make CMakeFiles/gamma.dir/gamma.cpp.s
-.PHONY : gamma.cpp.s
+negaposi.cpp.s:
+	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/negaposi.cpp.s
+.PHONY : negaposi.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... gamma"
-	@echo "... gamma.o"
-	@echo "... gamma.i"
-	@echo "... gamma.s"
+	@echo "... negaposi"
+	@echo "... negaposi.o"
+	@echo "... negaposi.i"
+	@echo "... negaposi.s"
 .PHONY : help
 
 

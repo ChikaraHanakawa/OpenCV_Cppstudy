@@ -21,7 +21,7 @@ int main(){
     lut.data[i] = (unsigned char) (255.0 * pow(i / 255.0, 1.0 / gamma));
   }
 
-  LUT(img_src, lut, img_dst);
+  cv::LUT(img_src, lut, img_dst);
 
   cv::resize(img_src, resize_src, cv::Size(), 0.2, 0.2);
   cv::resize(img_dst, resize_dst, cv::Size(), 0.2, 0.2);
