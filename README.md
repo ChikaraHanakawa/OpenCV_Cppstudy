@@ -1,5 +1,5 @@
 # OpenCV_Cppstudy
-***Document what I did to learn OpenCV.***
+***Document what I did to learn OpenCV. This repository written C++***
 ___
 ## 1.コンパイル方法
   ### 1.CMakeLists.txtの作成  
@@ -21,3 +21,8 @@ ___
   ```
 > [makefileの引用元](https://qiita.com/kekenonono/items/0fcf042bca2d3d17867a)  
 > [OpenCVについての参考資料](https://www.kspub.co.jp/book/detail/1538290.html)
+## 2.各ディレクトリの説明
+  ### 1. src
+  `src`の中には、私がOpenCVの関数を勉強する際に作成したコードが入っています
+  ### 2. images
+  `images`内には、コードで使用する画像が入っています
