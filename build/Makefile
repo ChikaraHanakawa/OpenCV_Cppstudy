@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named negaposi
+# Target rules for targets named operator
 
 # Build rule for target.
-negaposi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 negaposi
-.PHONY : negaposi
+operator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 operator
+.PHONY : operator
 
 # fast build rule for target.
-negaposi/fast:
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/build
-.PHONY : negaposi/fast
+operator/fast:
+	$(MAKE) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/build
+.PHONY : operator/fast
 
-negaposi.o: negaposi.cpp.o
+operator.o: operator.cpp.o
 
-.PHONY : negaposi.o
+.PHONY : operator.o
 
 # target to build an object file
-negaposi.cpp.o:
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/negaposi.cpp.o
-.PHONY : negaposi.cpp.o
+operator.cpp.o:
+	$(MAKE) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/operator.cpp.o
+.PHONY : operator.cpp.o
 
-negaposi.i: negaposi.cpp.i
+operator.i: operator.cpp.i
 
-.PHONY : negaposi.i
+.PHONY : operator.i
 
 # target to preprocess a source file
-negaposi.cpp.i:
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/negaposi.cpp.i
-.PHONY : negaposi.cpp.i
+operator.cpp.i:
+	$(MAKE) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/operator.cpp.i
+.PHONY : operator.cpp.i
 
-negaposi.s: negaposi.cpp.s
+operator.s: operator.cpp.s
 
-.PHONY : negaposi.s
+.PHONY : operator.s
 
 # target to generate assembly for a file
-negaposi.cpp.s:
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/negaposi.cpp.s
-.PHONY : negaposi.cpp.s
+operator.cpp.s:
+	$(MAKE) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/operator.cpp.s
+.PHONY : operator.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... negaposi"
-	@echo "... negaposi.o"
-	@echo "... negaposi.i"
-	@echo "... negaposi.s"
+	@echo "... operator"
+	@echo "... operator.o"
+	@echo "... operator.i"
+	@echo "... operator.s"
 .PHONY : help
 
 

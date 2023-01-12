@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/negaposi.dir/all
+all: CMakeFiles/operator.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/negaposi.dir/clean
+clean: CMakeFiles/operator.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/negaposi.dir
+# Target rules for target CMakeFiles/operator.dir
 
 # All Build rule for target.
-CMakeFiles/negaposi.dir/all:
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/depend
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target negaposi"
-.PHONY : CMakeFiles/negaposi.dir/all
+CMakeFiles/operator.dir/all:
+	$(MAKE) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/depend
+	$(MAKE) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target operator"
+.PHONY : CMakeFiles/operator.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/negaposi.dir/rule: cmake_check_build_system
+CMakeFiles/operator.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/negaposi.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/operator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 0
-.PHONY : CMakeFiles/negaposi.dir/rule
+.PHONY : CMakeFiles/operator.dir/rule
 
 # Convenience name for target.
-negaposi: CMakeFiles/negaposi.dir/rule
+operator: CMakeFiles/operator.dir/rule
 
-.PHONY : negaposi
+.PHONY : operator
 
 # clean rule for target.
-CMakeFiles/negaposi.dir/clean:
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/clean
-.PHONY : CMakeFiles/negaposi.dir/clean
+CMakeFiles/operator.dir/clean:
+	$(MAKE) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/clean
+.PHONY : CMakeFiles/operator.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
