@@ -12,12 +12,12 @@ int main(){
     return -1;
   }
 
-  cv::namedWindow("befor", cv::WINDOW_AUTOSIZE);
+  cv::namedWindow("before", cv::WINDOW_AUTOSIZE);
   cv::namedWindow("after", cv::WINDOW_AUTOSIZE);
 
   cv::blur(img_src, img_dst, cv::Size(3,3));
 
-  cv::imshow("befor", img_src);
+  cv::imshow("before", img_src);
   cv::imshow("after", img_dst);
 
   cv::waitKey(0);
