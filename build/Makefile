@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named operator
+# Target rules for targets named sobel
 
 # Build rule for target.
-operator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 operator
-.PHONY : operator
+sobel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sobel
+.PHONY : sobel
 
 # fast build rule for target.
-operator/fast:
-	$(MAKE) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/build
-.PHONY : operator/fast
+sobel/fast:
+	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/build
+.PHONY : sobel/fast
 
-operator.o: operator.cpp.o
+sobel.o: sobel.cpp.o
 
-.PHONY : operator.o
+.PHONY : sobel.o
 
 # target to build an object file
-operator.cpp.o:
-	$(MAKE) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/operator.cpp.o
-.PHONY : operator.cpp.o
+sobel.cpp.o:
+	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.o
+.PHONY : sobel.cpp.o
 
-operator.i: operator.cpp.i
+sobel.i: sobel.cpp.i
 
-.PHONY : operator.i
+.PHONY : sobel.i
 
 # target to preprocess a source file
-operator.cpp.i:
-	$(MAKE) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/operator.cpp.i
-.PHONY : operator.cpp.i
+sobel.cpp.i:
+	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.i
+.PHONY : sobel.cpp.i
 
-operator.s: operator.cpp.s
+sobel.s: sobel.cpp.s
 
-.PHONY : operator.s
+.PHONY : sobel.s
 
 # target to generate assembly for a file
-operator.cpp.s:
-	$(MAKE) -f CMakeFiles/operator.dir/build.make CMakeFiles/operator.dir/operator.cpp.s
-.PHONY : operator.cpp.s
+sobel.cpp.s:
+	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.s
+.PHONY : sobel.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... operator"
-	@echo "... operator.o"
-	@echo "... operator.i"
-	@echo "... operator.s"
+	@echo "... sobel"
+	@echo "... sobel.o"
+	@echo "... sobel.i"
+	@echo "... sobel.s"
 .PHONY : help
 
 
