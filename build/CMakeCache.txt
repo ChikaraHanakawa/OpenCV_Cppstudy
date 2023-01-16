@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=sobel
+CMAKE_PROJECT_NAME:STATIC=shape
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -212,8 +212,11 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 
+//No help, variable specified on the command line.
+SOUCE_CODE:UNINITIALIZED=shape
+
 //Target object name
-SOURCE_CODE:STRING=sobel
+SOURCE_CODE:STRING=shape
 
 //Value Computed by CMake
 camera_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
@@ -274,6 +277,12 @@ operator_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 
 //Value Computed by CMake
 operator_SOURCE_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy
+
+//Value Computed by CMake
+shape_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
+
+//Value Computed by CMake
+shape_SOURCE_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy
 
 //Value Computed by CMake
 sobel_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build

@@ -51,5 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/sobel.dir/DependInfo.cmake"
+  "CMakeFiles/shape.dir/DependInfo.cmake"
   )

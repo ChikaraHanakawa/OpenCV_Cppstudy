@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/sobel.dir/all
+all: CMakeFiles/shape.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/sobel.dir/clean
+clean: CMakeFiles/shape.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/sobel.dir
+# Target rules for target CMakeFiles/shape.dir
 
 # All Build rule for target.
-CMakeFiles/sobel.dir/all:
-	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/depend
-	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target sobel"
-.PHONY : CMakeFiles/sobel.dir/all
+CMakeFiles/shape.dir/all:
+	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/depend
+	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target shape"
+.PHONY : CMakeFiles/shape.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/sobel.dir/rule: cmake_check_build_system
+CMakeFiles/shape.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sobel.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/shape.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 0
-.PHONY : CMakeFiles/sobel.dir/rule
+.PHONY : CMakeFiles/shape.dir/rule
 
 # Convenience name for target.
-sobel: CMakeFiles/sobel.dir/rule
+shape: CMakeFiles/shape.dir/rule
 
-.PHONY : sobel
+.PHONY : shape
 
 # clean rule for target.
-CMakeFiles/sobel.dir/clean:
-	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/clean
-.PHONY : CMakeFiles/sobel.dir/clean
+CMakeFiles/shape.dir/clean:
+	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/clean
+.PHONY : CMakeFiles/shape.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

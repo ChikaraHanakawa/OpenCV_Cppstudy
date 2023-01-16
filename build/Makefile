@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sobel
+# Target rules for targets named shape
 
 # Build rule for target.
-sobel: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sobel
-.PHONY : sobel
+shape: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 shape
+.PHONY : shape
 
 # fast build rule for target.
-sobel/fast:
-	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/build
-.PHONY : sobel/fast
+shape/fast:
+	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/build
+.PHONY : shape/fast
 
-sobel.o: sobel.cpp.o
+shape.o: shape.cpp.o
 
-.PHONY : sobel.o
+.PHONY : shape.o
 
 # target to build an object file
-sobel.cpp.o:
-	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.o
-.PHONY : sobel.cpp.o
+shape.cpp.o:
+	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/shape.cpp.o
+.PHONY : shape.cpp.o
 
-sobel.i: sobel.cpp.i
+shape.i: shape.cpp.i
 
-.PHONY : sobel.i
+.PHONY : shape.i
 
 # target to preprocess a source file
-sobel.cpp.i:
-	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.i
-.PHONY : sobel.cpp.i
+shape.cpp.i:
+	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/shape.cpp.i
+.PHONY : shape.cpp.i
 
-sobel.s: sobel.cpp.s
+shape.s: shape.cpp.s
 
-.PHONY : sobel.s
+.PHONY : shape.s
 
 # target to generate assembly for a file
-sobel.cpp.s:
-	$(MAKE) -f CMakeFiles/sobel.dir/build.make CMakeFiles/sobel.dir/sobel.cpp.s
-.PHONY : sobel.cpp.s
+shape.cpp.s:
+	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/shape.cpp.s
+.PHONY : shape.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... sobel"
-	@echo "... sobel.o"
-	@echo "... sobel.i"
-	@echo "... sobel.s"
+	@echo "... shape"
+	@echo "... shape.o"
+	@echo "... shape.i"
+	@echo "... shape.s"
 .PHONY : help
 
 
