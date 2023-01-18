@@ -1,5 +1,3 @@
-#define _CRT_SECURE_NO_WARNIGS
-#define _USE_MATH_DEFINES
 #include <iostream>
 #include <cmath>
 #include <opencv2/opencv.hpp>
@@ -24,7 +22,7 @@ int main(){
   cv::calcHist(&img_gray, 1, 0, cv::Mat(), histogram, 1, hdims, ranges); 
 
   double hist_min, hist_max;
-  minMaxLoc(histogram, &hist_min, &hist_max);
+  cv::minMaxLoc(histogram, &hist_min, &hist_max);
 
   for(int i = 0; i <= 255; i++){
     int v = cv::saturate_cast<int>(histogram.at<float>(i));
