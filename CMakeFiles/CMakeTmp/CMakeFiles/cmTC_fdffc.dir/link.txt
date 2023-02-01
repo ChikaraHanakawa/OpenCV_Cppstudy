@@ -1,0 +1,1 @@
+/usr/bin/c++    -O3 -DNDEBUG    CMakeFiles/cmTC_fdffc.dir/src.cxx.o  -o cmTC_fdffc 

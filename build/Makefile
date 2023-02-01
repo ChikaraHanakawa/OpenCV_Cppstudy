@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named shape
+# Target rules for targets named sharpening
 
 # Build rule for target.
-shape: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 shape
-.PHONY : shape
+sharpening: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sharpening
+.PHONY : sharpening
 
 # fast build rule for target.
-shape/fast:
-	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/build
-.PHONY : shape/fast
+sharpening/fast:
+	$(MAKE) -f CMakeFiles/sharpening.dir/build.make CMakeFiles/sharpening.dir/build
+.PHONY : sharpening/fast
 
-shape.o: shape.cpp.o
+sharpening.o: sharpening.cpp.o
 
-.PHONY : shape.o
+.PHONY : sharpening.o
 
 # target to build an object file
-shape.cpp.o:
-	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/shape.cpp.o
-.PHONY : shape.cpp.o
+sharpening.cpp.o:
+	$(MAKE) -f CMakeFiles/sharpening.dir/build.make CMakeFiles/sharpening.dir/sharpening.cpp.o
+.PHONY : sharpening.cpp.o
 
-shape.i: shape.cpp.i
+sharpening.i: sharpening.cpp.i
 
-.PHONY : shape.i
+.PHONY : sharpening.i
 
 # target to preprocess a source file
-shape.cpp.i:
-	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/shape.cpp.i
-.PHONY : shape.cpp.i
+sharpening.cpp.i:
+	$(MAKE) -f CMakeFiles/sharpening.dir/build.make CMakeFiles/sharpening.dir/sharpening.cpp.i
+.PHONY : sharpening.cpp.i
 
-shape.s: shape.cpp.s
+sharpening.s: sharpening.cpp.s
 
-.PHONY : shape.s
+.PHONY : sharpening.s
 
 # target to generate assembly for a file
-shape.cpp.s:
-	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/shape.cpp.s
-.PHONY : shape.cpp.s
+sharpening.cpp.s:
+	$(MAKE) -f CMakeFiles/sharpening.dir/build.make CMakeFiles/sharpening.dir/sharpening.cpp.s
+.PHONY : sharpening.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... shape"
-	@echo "... shape.o"
-	@echo "... shape.i"
-	@echo "... shape.s"
+	@echo "... sharpening"
+	@echo "... sharpening.o"
+	@echo "... sharpening.i"
+	@echo "... sharpening.s"
 .PHONY : help
 
 

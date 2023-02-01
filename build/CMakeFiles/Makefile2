@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/shape.dir/all
+all: CMakeFiles/sharpening.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/shape.dir/clean
+clean: CMakeFiles/sharpening.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/shape.dir
+# Target rules for target CMakeFiles/sharpening.dir
 
 # All Build rule for target.
-CMakeFiles/shape.dir/all:
-	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/depend
-	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target shape"
-.PHONY : CMakeFiles/shape.dir/all
+CMakeFiles/sharpening.dir/all:
+	$(MAKE) -f CMakeFiles/sharpening.dir/build.make CMakeFiles/sharpening.dir/depend
+	$(MAKE) -f CMakeFiles/sharpening.dir/build.make CMakeFiles/sharpening.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target sharpening"
+.PHONY : CMakeFiles/sharpening.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/shape.dir/rule: cmake_check_build_system
+CMakeFiles/sharpening.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/shape.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sharpening.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 0
-.PHONY : CMakeFiles/shape.dir/rule
+.PHONY : CMakeFiles/sharpening.dir/rule
 
 # Convenience name for target.
-shape: CMakeFiles/shape.dir/rule
+sharpening: CMakeFiles/sharpening.dir/rule
 
-.PHONY : shape
+.PHONY : sharpening
 
 # clean rule for target.
-CMakeFiles/shape.dir/clean:
-	$(MAKE) -f CMakeFiles/shape.dir/build.make CMakeFiles/shape.dir/clean
-.PHONY : CMakeFiles/shape.dir/clean
+CMakeFiles/sharpening.dir/clean:
+	$(MAKE) -f CMakeFiles/sharpening.dir/build.make CMakeFiles/sharpening.dir/clean
+.PHONY : CMakeFiles/sharpening.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
