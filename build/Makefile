@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sharpening
+# Target rules for targets named image
 
 # Build rule for target.
-sharpening: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sharpening
-.PHONY : sharpening
+image: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 image
+.PHONY : image
 
 # fast build rule for target.
-sharpening/fast:
-	$(MAKE) -f CMakeFiles/sharpening.dir/build.make CMakeFiles/sharpening.dir/build
-.PHONY : sharpening/fast
+image/fast:
+	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
+.PHONY : image/fast
 
-sharpening.o: sharpening.cpp.o
+image.o: image.cpp.o
 
-.PHONY : sharpening.o
+.PHONY : image.o
 
 # target to build an object file
-sharpening.cpp.o:
-	$(MAKE) -f CMakeFiles/sharpening.dir/build.make CMakeFiles/sharpening.dir/sharpening.cpp.o
-.PHONY : sharpening.cpp.o
+image.cpp.o:
+	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.o
+.PHONY : image.cpp.o
 
-sharpening.i: sharpening.cpp.i
+image.i: image.cpp.i
 
-.PHONY : sharpening.i
+.PHONY : image.i
 
 # target to preprocess a source file
-sharpening.cpp.i:
-	$(MAKE) -f CMakeFiles/sharpening.dir/build.make CMakeFiles/sharpening.dir/sharpening.cpp.i
-.PHONY : sharpening.cpp.i
+image.cpp.i:
+	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.i
+.PHONY : image.cpp.i
 
-sharpening.s: sharpening.cpp.s
+image.s: image.cpp.s
 
-.PHONY : sharpening.s
+.PHONY : image.s
 
 # target to generate assembly for a file
-sharpening.cpp.s:
-	$(MAKE) -f CMakeFiles/sharpening.dir/build.make CMakeFiles/sharpening.dir/sharpening.cpp.s
-.PHONY : sharpening.cpp.s
+image.cpp.s:
+	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.s
+.PHONY : image.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... sharpening"
-	@echo "... sharpening.o"
-	@echo "... sharpening.i"
-	@echo "... sharpening.s"
+	@echo "... image"
+	@echo "... image.o"
+	@echo "... image.i"
+	@echo "... image.s"
 .PHONY : help
 
 
