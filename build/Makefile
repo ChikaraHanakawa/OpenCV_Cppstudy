@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named image
+# Target rules for targets named binary_image
 
 # Build rule for target.
-image: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 image
-.PHONY : image
+binary_image: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 binary_image
+.PHONY : binary_image
 
 # fast build rule for target.
-image/fast:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
-.PHONY : image/fast
+binary_image/fast:
+	$(MAKE) -f CMakeFiles/binary_image.dir/build.make CMakeFiles/binary_image.dir/build
+.PHONY : binary_image/fast
 
-image.o: image.cpp.o
+binary_image.o: binary_image.cpp.o
 
-.PHONY : image.o
+.PHONY : binary_image.o
 
 # target to build an object file
-image.cpp.o:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.o
-.PHONY : image.cpp.o
+binary_image.cpp.o:
+	$(MAKE) -f CMakeFiles/binary_image.dir/build.make CMakeFiles/binary_image.dir/binary_image.cpp.o
+.PHONY : binary_image.cpp.o
 
-image.i: image.cpp.i
+binary_image.i: binary_image.cpp.i
 
-.PHONY : image.i
+.PHONY : binary_image.i
 
 # target to preprocess a source file
-image.cpp.i:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.i
-.PHONY : image.cpp.i
+binary_image.cpp.i:
+	$(MAKE) -f CMakeFiles/binary_image.dir/build.make CMakeFiles/binary_image.dir/binary_image.cpp.i
+.PHONY : binary_image.cpp.i
 
-image.s: image.cpp.s
+binary_image.s: binary_image.cpp.s
 
-.PHONY : image.s
+.PHONY : binary_image.s
 
 # target to generate assembly for a file
-image.cpp.s:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.s
-.PHONY : image.cpp.s
+binary_image.cpp.s:
+	$(MAKE) -f CMakeFiles/binary_image.dir/build.make CMakeFiles/binary_image.dir/binary_image.cpp.s
+.PHONY : binary_image.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... image"
-	@echo "... image.o"
-	@echo "... image.i"
-	@echo "... image.s"
+	@echo "... binary_image"
+	@echo "... binary_image.o"
+	@echo "... binary_image.i"
+	@echo "... binary_image.s"
 .PHONY : help
 
 
