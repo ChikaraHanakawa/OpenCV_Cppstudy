@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named binary_image
+# Target rules for targets named dilation_erosion
 
 # Build rule for target.
-binary_image: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 binary_image
-.PHONY : binary_image
+dilation_erosion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dilation_erosion
+.PHONY : dilation_erosion
 
 # fast build rule for target.
-binary_image/fast:
-	$(MAKE) -f CMakeFiles/binary_image.dir/build.make CMakeFiles/binary_image.dir/build
-.PHONY : binary_image/fast
+dilation_erosion/fast:
+	$(MAKE) -f CMakeFiles/dilation_erosion.dir/build.make CMakeFiles/dilation_erosion.dir/build
+.PHONY : dilation_erosion/fast
 
-binary_image.o: binary_image.cpp.o
+dilation_erosion.o: dilation_erosion.cpp.o
 
-.PHONY : binary_image.o
+.PHONY : dilation_erosion.o
 
 # target to build an object file
-binary_image.cpp.o:
-	$(MAKE) -f CMakeFiles/binary_image.dir/build.make CMakeFiles/binary_image.dir/binary_image.cpp.o
-.PHONY : binary_image.cpp.o
+dilation_erosion.cpp.o:
+	$(MAKE) -f CMakeFiles/dilation_erosion.dir/build.make CMakeFiles/dilation_erosion.dir/dilation_erosion.cpp.o
+.PHONY : dilation_erosion.cpp.o
 
-binary_image.i: binary_image.cpp.i
+dilation_erosion.i: dilation_erosion.cpp.i
 
-.PHONY : binary_image.i
+.PHONY : dilation_erosion.i
 
 # target to preprocess a source file
-binary_image.cpp.i:
-	$(MAKE) -f CMakeFiles/binary_image.dir/build.make CMakeFiles/binary_image.dir/binary_image.cpp.i
-.PHONY : binary_image.cpp.i
+dilation_erosion.cpp.i:
+	$(MAKE) -f CMakeFiles/dilation_erosion.dir/build.make CMakeFiles/dilation_erosion.dir/dilation_erosion.cpp.i
+.PHONY : dilation_erosion.cpp.i
 
-binary_image.s: binary_image.cpp.s
+dilation_erosion.s: dilation_erosion.cpp.s
 
-.PHONY : binary_image.s
+.PHONY : dilation_erosion.s
 
 # target to generate assembly for a file
-binary_image.cpp.s:
-	$(MAKE) -f CMakeFiles/binary_image.dir/build.make CMakeFiles/binary_image.dir/binary_image.cpp.s
-.PHONY : binary_image.cpp.s
+dilation_erosion.cpp.s:
+	$(MAKE) -f CMakeFiles/dilation_erosion.dir/build.make CMakeFiles/dilation_erosion.dir/dilation_erosion.cpp.s
+.PHONY : dilation_erosion.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... binary_image"
-	@echo "... binary_image.o"
-	@echo "... binary_image.i"
-	@echo "... binary_image.s"
+	@echo "... dilation_erosion"
+	@echo "... dilation_erosion.o"
+	@echo "... dilation_erosion.i"
+	@echo "... dilation_erosion.s"
 .PHONY : help
 
 

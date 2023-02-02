@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=binary_image
+CMAKE_PROJECT_NAME:STATIC=dilation_erosion
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -216,7 +216,7 @@ OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 SOUCE_CODE:UNINITIALIZED=shape
 
 //Target object name
-SOURCE_CODE:STRING=binary_image
+SOURCE_CODE:STRING=dilation_erosion
 
 //Value Computed by CMake
 binary_image_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
@@ -241,6 +241,12 @@ depth_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 
 //Value Computed by CMake
 depth_SOURCE_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy
+
+//Value Computed by CMake
+dilation_erosion_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
+
+//Value Computed by CMake
+dilation_erosion_SOURCE_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy
 
 //Value Computed by CMake
 frequency_table_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
