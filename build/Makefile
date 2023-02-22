@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named dilation_erosion
+# Target rules for targets named rs-capture
 
 # Build rule for target.
-dilation_erosion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dilation_erosion
-.PHONY : dilation_erosion
+rs-capture: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rs-capture
+.PHONY : rs-capture
 
 # fast build rule for target.
-dilation_erosion/fast:
-	$(MAKE) -f CMakeFiles/dilation_erosion.dir/build.make CMakeFiles/dilation_erosion.dir/build
-.PHONY : dilation_erosion/fast
+rs-capture/fast:
+	$(MAKE) -f CMakeFiles/rs-capture.dir/build.make CMakeFiles/rs-capture.dir/build
+.PHONY : rs-capture/fast
 
-dilation_erosion.o: dilation_erosion.cpp.o
+rs-capture.o: rs-capture.cpp.o
 
-.PHONY : dilation_erosion.o
+.PHONY : rs-capture.o
 
 # target to build an object file
-dilation_erosion.cpp.o:
-	$(MAKE) -f CMakeFiles/dilation_erosion.dir/build.make CMakeFiles/dilation_erosion.dir/dilation_erosion.cpp.o
-.PHONY : dilation_erosion.cpp.o
+rs-capture.cpp.o:
+	$(MAKE) -f CMakeFiles/rs-capture.dir/build.make CMakeFiles/rs-capture.dir/rs-capture.cpp.o
+.PHONY : rs-capture.cpp.o
 
-dilation_erosion.i: dilation_erosion.cpp.i
+rs-capture.i: rs-capture.cpp.i
 
-.PHONY : dilation_erosion.i
+.PHONY : rs-capture.i
 
 # target to preprocess a source file
-dilation_erosion.cpp.i:
-	$(MAKE) -f CMakeFiles/dilation_erosion.dir/build.make CMakeFiles/dilation_erosion.dir/dilation_erosion.cpp.i
-.PHONY : dilation_erosion.cpp.i
+rs-capture.cpp.i:
+	$(MAKE) -f CMakeFiles/rs-capture.dir/build.make CMakeFiles/rs-capture.dir/rs-capture.cpp.i
+.PHONY : rs-capture.cpp.i
 
-dilation_erosion.s: dilation_erosion.cpp.s
+rs-capture.s: rs-capture.cpp.s
 
-.PHONY : dilation_erosion.s
+.PHONY : rs-capture.s
 
 # target to generate assembly for a file
-dilation_erosion.cpp.s:
-	$(MAKE) -f CMakeFiles/dilation_erosion.dir/build.make CMakeFiles/dilation_erosion.dir/dilation_erosion.cpp.s
-.PHONY : dilation_erosion.cpp.s
+rs-capture.cpp.s:
+	$(MAKE) -f CMakeFiles/rs-capture.dir/build.make CMakeFiles/rs-capture.dir/rs-capture.cpp.s
+.PHONY : rs-capture.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... dilation_erosion"
-	@echo "... dilation_erosion.o"
-	@echo "... dilation_erosion.i"
-	@echo "... dilation_erosion.s"
+	@echo "... rs-capture"
+	@echo "... rs-capture.o"
+	@echo "... rs-capture.i"
+	@echo "... rs-capture.s"
 .PHONY : help
 
 

@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/dilation_erosion.dir/all
+all: CMakeFiles/rs-capture.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/dilation_erosion.dir/clean
+clean: CMakeFiles/rs-capture.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/dilation_erosion.dir
+# Target rules for target CMakeFiles/rs-capture.dir
 
 # All Build rule for target.
-CMakeFiles/dilation_erosion.dir/all:
-	$(MAKE) -f CMakeFiles/dilation_erosion.dir/build.make CMakeFiles/dilation_erosion.dir/depend
-	$(MAKE) -f CMakeFiles/dilation_erosion.dir/build.make CMakeFiles/dilation_erosion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target dilation_erosion"
-.PHONY : CMakeFiles/dilation_erosion.dir/all
+CMakeFiles/rs-capture.dir/all:
+	$(MAKE) -f CMakeFiles/rs-capture.dir/build.make CMakeFiles/rs-capture.dir/depend
+	$(MAKE) -f CMakeFiles/rs-capture.dir/build.make CMakeFiles/rs-capture.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target rs-capture"
+.PHONY : CMakeFiles/rs-capture.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/dilation_erosion.dir/rule: cmake_check_build_system
+CMakeFiles/rs-capture.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dilation_erosion.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rs-capture.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 0
-.PHONY : CMakeFiles/dilation_erosion.dir/rule
+.PHONY : CMakeFiles/rs-capture.dir/rule
 
 # Convenience name for target.
-dilation_erosion: CMakeFiles/dilation_erosion.dir/rule
+rs-capture: CMakeFiles/rs-capture.dir/rule
 
-.PHONY : dilation_erosion
+.PHONY : rs-capture
 
 # clean rule for target.
-CMakeFiles/dilation_erosion.dir/clean:
-	$(MAKE) -f CMakeFiles/dilation_erosion.dir/build.make CMakeFiles/dilation_erosion.dir/clean
-.PHONY : CMakeFiles/dilation_erosion.dir/clean
+CMakeFiles/rs-capture.dir/clean:
+	$(MAKE) -f CMakeFiles/rs-capture.dir/build.make CMakeFiles/rs-capture.dir/clean
+.PHONY : CMakeFiles/rs-capture.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

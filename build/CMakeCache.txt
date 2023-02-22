@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=dilation_erosion
+CMAKE_PROJECT_NAME:STATIC=rs-capture
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -216,7 +216,7 @@ OpenCV_DIR:PATH=/usr/local/lib/cmake/opencv4
 SOUCE_CODE:UNINITIALIZED=shape
 
 //Target object name
-SOURCE_CODE:STRING=dilation_erosion
+SOURCE_CODE:STRING=rs-capture
 
 //Value Computed by CMake
 binary_image_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
@@ -289,6 +289,24 @@ operator_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 
 //Value Computed by CMake
 operator_SOURCE_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy
+
+//Value Computed by CMake
+realsense_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
+
+//Value Computed by CMake
+realsense_SOURCE_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy
+
+//Value Computed by CMake
+rs-capture_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
+
+//Value Computed by CMake
+rs-capture_SOURCE_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy
+
+//Value Computed by CMake
+rs-imshow_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
+
+//Value Computed by CMake
+rs-imshow_SOURCE_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy
 
 //Value Computed by CMake
 shape_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
