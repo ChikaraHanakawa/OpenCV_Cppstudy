@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rs-capture
+# Target rules for targets named template
 
 # Build rule for target.
-rs-capture: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rs-capture
-.PHONY : rs-capture
+template: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 template
+.PHONY : template
 
 # fast build rule for target.
-rs-capture/fast:
-	$(MAKE) -f CMakeFiles/rs-capture.dir/build.make CMakeFiles/rs-capture.dir/build
-.PHONY : rs-capture/fast
+template/fast:
+	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/build
+.PHONY : template/fast
 
-rs-capture.o: rs-capture.cpp.o
+template.o: template.cpp.o
 
-.PHONY : rs-capture.o
+.PHONY : template.o
 
 # target to build an object file
-rs-capture.cpp.o:
-	$(MAKE) -f CMakeFiles/rs-capture.dir/build.make CMakeFiles/rs-capture.dir/rs-capture.cpp.o
-.PHONY : rs-capture.cpp.o
+template.cpp.o:
+	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/template.cpp.o
+.PHONY : template.cpp.o
 
-rs-capture.i: rs-capture.cpp.i
+template.i: template.cpp.i
 
-.PHONY : rs-capture.i
+.PHONY : template.i
 
 # target to preprocess a source file
-rs-capture.cpp.i:
-	$(MAKE) -f CMakeFiles/rs-capture.dir/build.make CMakeFiles/rs-capture.dir/rs-capture.cpp.i
-.PHONY : rs-capture.cpp.i
+template.cpp.i:
+	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/template.cpp.i
+.PHONY : template.cpp.i
 
-rs-capture.s: rs-capture.cpp.s
+template.s: template.cpp.s
 
-.PHONY : rs-capture.s
+.PHONY : template.s
 
 # target to generate assembly for a file
-rs-capture.cpp.s:
-	$(MAKE) -f CMakeFiles/rs-capture.dir/build.make CMakeFiles/rs-capture.dir/rs-capture.cpp.s
-.PHONY : rs-capture.cpp.s
+template.cpp.s:
+	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/template.cpp.s
+.PHONY : template.cpp.s
 
 # Help Target
 help:
@@ -156,12 +156,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... rs-capture"
-	@echo "... rs-capture.o"
-	@echo "... rs-capture.i"
-	@echo "... rs-capture.s"
+	@echo "... rebuild_cache"
+	@echo "... template"
+	@echo "... template.o"
+	@echo "... template.i"
+	@echo "... template.s"
 .PHONY : help
 
 
