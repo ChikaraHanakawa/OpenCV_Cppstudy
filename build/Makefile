@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named template
+# Target rules for targets named rs-sobel
 
 # Build rule for target.
-template: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 template
-.PHONY : template
+rs-sobel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rs-sobel
+.PHONY : rs-sobel
 
 # fast build rule for target.
-template/fast:
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/build
-.PHONY : template/fast
+rs-sobel/fast:
+	$(MAKE) -f CMakeFiles/rs-sobel.dir/build.make CMakeFiles/rs-sobel.dir/build
+.PHONY : rs-sobel/fast
 
-template.o: template.cpp.o
+rs-sobel.o: rs-sobel.cpp.o
 
-.PHONY : template.o
+.PHONY : rs-sobel.o
 
 # target to build an object file
-template.cpp.o:
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/template.cpp.o
-.PHONY : template.cpp.o
+rs-sobel.cpp.o:
+	$(MAKE) -f CMakeFiles/rs-sobel.dir/build.make CMakeFiles/rs-sobel.dir/rs-sobel.cpp.o
+.PHONY : rs-sobel.cpp.o
 
-template.i: template.cpp.i
+rs-sobel.i: rs-sobel.cpp.i
 
-.PHONY : template.i
+.PHONY : rs-sobel.i
 
 # target to preprocess a source file
-template.cpp.i:
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/template.cpp.i
-.PHONY : template.cpp.i
+rs-sobel.cpp.i:
+	$(MAKE) -f CMakeFiles/rs-sobel.dir/build.make CMakeFiles/rs-sobel.dir/rs-sobel.cpp.i
+.PHONY : rs-sobel.cpp.i
 
-template.s: template.cpp.s
+rs-sobel.s: rs-sobel.cpp.s
 
-.PHONY : template.s
+.PHONY : rs-sobel.s
 
 # target to generate assembly for a file
-template.cpp.s:
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/template.cpp.s
-.PHONY : template.cpp.s
+rs-sobel.cpp.s:
+	$(MAKE) -f CMakeFiles/rs-sobel.dir/build.make CMakeFiles/rs-sobel.dir/rs-sobel.cpp.s
+.PHONY : rs-sobel.cpp.s
 
 # Help Target
 help:
@@ -156,12 +156,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... template"
-	@echo "... template.o"
-	@echo "... template.i"
-	@echo "... template.s"
+	@echo "... edit_cache"
+	@echo "... rs-sobel"
+	@echo "... rs-sobel.o"
+	@echo "... rs-sobel.i"
+	@echo "... rs-sobel.s"
 .PHONY : help
 
 
