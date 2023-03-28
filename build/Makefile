@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rs-sobel
+# Target rules for targets named rs-mouse
 
 # Build rule for target.
-rs-sobel: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rs-sobel
-.PHONY : rs-sobel
+rs-mouse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rs-mouse
+.PHONY : rs-mouse
 
 # fast build rule for target.
-rs-sobel/fast:
-	$(MAKE) -f CMakeFiles/rs-sobel.dir/build.make CMakeFiles/rs-sobel.dir/build
-.PHONY : rs-sobel/fast
+rs-mouse/fast:
+	$(MAKE) -f CMakeFiles/rs-mouse.dir/build.make CMakeFiles/rs-mouse.dir/build
+.PHONY : rs-mouse/fast
 
-rs-sobel.o: rs-sobel.cpp.o
+rs-mouse.o: rs-mouse.cpp.o
 
-.PHONY : rs-sobel.o
+.PHONY : rs-mouse.o
 
 # target to build an object file
-rs-sobel.cpp.o:
-	$(MAKE) -f CMakeFiles/rs-sobel.dir/build.make CMakeFiles/rs-sobel.dir/rs-sobel.cpp.o
-.PHONY : rs-sobel.cpp.o
+rs-mouse.cpp.o:
+	$(MAKE) -f CMakeFiles/rs-mouse.dir/build.make CMakeFiles/rs-mouse.dir/rs-mouse.cpp.o
+.PHONY : rs-mouse.cpp.o
 
-rs-sobel.i: rs-sobel.cpp.i
+rs-mouse.i: rs-mouse.cpp.i
 
-.PHONY : rs-sobel.i
+.PHONY : rs-mouse.i
 
 # target to preprocess a source file
-rs-sobel.cpp.i:
-	$(MAKE) -f CMakeFiles/rs-sobel.dir/build.make CMakeFiles/rs-sobel.dir/rs-sobel.cpp.i
-.PHONY : rs-sobel.cpp.i
+rs-mouse.cpp.i:
+	$(MAKE) -f CMakeFiles/rs-mouse.dir/build.make CMakeFiles/rs-mouse.dir/rs-mouse.cpp.i
+.PHONY : rs-mouse.cpp.i
 
-rs-sobel.s: rs-sobel.cpp.s
+rs-mouse.s: rs-mouse.cpp.s
 
-.PHONY : rs-sobel.s
+.PHONY : rs-mouse.s
 
 # target to generate assembly for a file
-rs-sobel.cpp.s:
-	$(MAKE) -f CMakeFiles/rs-sobel.dir/build.make CMakeFiles/rs-sobel.dir/rs-sobel.cpp.s
-.PHONY : rs-sobel.cpp.s
+rs-mouse.cpp.s:
+	$(MAKE) -f CMakeFiles/rs-mouse.dir/build.make CMakeFiles/rs-mouse.dir/rs-mouse.cpp.s
+.PHONY : rs-mouse.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... rs-sobel"
-	@echo "... rs-sobel.o"
-	@echo "... rs-sobel.i"
-	@echo "... rs-sobel.s"
+	@echo "... rs-mouse"
+	@echo "... rs-mouse.o"
+	@echo "... rs-mouse.i"
+	@echo "... rs-mouse.s"
 .PHONY : help
 
 
