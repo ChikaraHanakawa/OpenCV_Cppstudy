@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rs-mouse
+# Target rules for targets named testbar
 
 # Build rule for target.
-rs-mouse: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rs-mouse
-.PHONY : rs-mouse
+testbar: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testbar
+.PHONY : testbar
 
 # fast build rule for target.
-rs-mouse/fast:
-	$(MAKE) -f CMakeFiles/rs-mouse.dir/build.make CMakeFiles/rs-mouse.dir/build
-.PHONY : rs-mouse/fast
+testbar/fast:
+	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/build
+.PHONY : testbar/fast
 
-rs-mouse.o: rs-mouse.cpp.o
+testbar.o: testbar.cpp.o
 
-.PHONY : rs-mouse.o
+.PHONY : testbar.o
 
 # target to build an object file
-rs-mouse.cpp.o:
-	$(MAKE) -f CMakeFiles/rs-mouse.dir/build.make CMakeFiles/rs-mouse.dir/rs-mouse.cpp.o
-.PHONY : rs-mouse.cpp.o
+testbar.cpp.o:
+	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/testbar.cpp.o
+.PHONY : testbar.cpp.o
 
-rs-mouse.i: rs-mouse.cpp.i
+testbar.i: testbar.cpp.i
 
-.PHONY : rs-mouse.i
+.PHONY : testbar.i
 
 # target to preprocess a source file
-rs-mouse.cpp.i:
-	$(MAKE) -f CMakeFiles/rs-mouse.dir/build.make CMakeFiles/rs-mouse.dir/rs-mouse.cpp.i
-.PHONY : rs-mouse.cpp.i
+testbar.cpp.i:
+	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/testbar.cpp.i
+.PHONY : testbar.cpp.i
 
-rs-mouse.s: rs-mouse.cpp.s
+testbar.s: testbar.cpp.s
 
-.PHONY : rs-mouse.s
+.PHONY : testbar.s
 
 # target to generate assembly for a file
-rs-mouse.cpp.s:
-	$(MAKE) -f CMakeFiles/rs-mouse.dir/build.make CMakeFiles/rs-mouse.dir/rs-mouse.cpp.s
-.PHONY : rs-mouse.cpp.s
+testbar.cpp.s:
+	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/testbar.cpp.s
+.PHONY : testbar.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... rs-mouse"
-	@echo "... rs-mouse.o"
-	@echo "... rs-mouse.i"
-	@echo "... rs-mouse.s"
+	@echo "... testbar"
+	@echo "... testbar.o"
+	@echo "... testbar.i"
+	@echo "... testbar.s"
 .PHONY : help
 
 

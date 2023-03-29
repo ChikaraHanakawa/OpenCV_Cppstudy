@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/rs-mouse.dir/all
+all: CMakeFiles/testbar.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/rs-mouse.dir/clean
+clean: CMakeFiles/testbar.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/rs-mouse.dir
+# Target rules for target CMakeFiles/testbar.dir
 
 # All Build rule for target.
-CMakeFiles/rs-mouse.dir/all:
-	$(MAKE) -f CMakeFiles/rs-mouse.dir/build.make CMakeFiles/rs-mouse.dir/depend
-	$(MAKE) -f CMakeFiles/rs-mouse.dir/build.make CMakeFiles/rs-mouse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target rs-mouse"
-.PHONY : CMakeFiles/rs-mouse.dir/all
+CMakeFiles/testbar.dir/all:
+	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/depend
+	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target testbar"
+.PHONY : CMakeFiles/testbar.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/rs-mouse.dir/rule: cmake_check_build_system
+CMakeFiles/testbar.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rs-mouse.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testbar.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 0
-.PHONY : CMakeFiles/rs-mouse.dir/rule
+.PHONY : CMakeFiles/testbar.dir/rule
 
 # Convenience name for target.
-rs-mouse: CMakeFiles/rs-mouse.dir/rule
+testbar: CMakeFiles/testbar.dir/rule
 
-.PHONY : rs-mouse
+.PHONY : testbar
 
 # clean rule for target.
-CMakeFiles/rs-mouse.dir/clean:
-	$(MAKE) -f CMakeFiles/rs-mouse.dir/build.make CMakeFiles/rs-mouse.dir/clean
-.PHONY : CMakeFiles/rs-mouse.dir/clean
+CMakeFiles/testbar.dir/clean:
+	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/clean
+.PHONY : CMakeFiles/testbar.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
