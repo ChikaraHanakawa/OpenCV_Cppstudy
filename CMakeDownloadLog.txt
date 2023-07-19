@@ -1,1 +1,1 @@
-#use_cache "/home/chikara/c++/opencv-4.5.5/.cache"
+#use_cache "/home/chikara/c++/opencv-4.7.0/.cache"

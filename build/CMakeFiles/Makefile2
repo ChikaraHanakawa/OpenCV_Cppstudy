@@ -44,16 +44,16 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy
+CMAKE_SOURCE_DIR = /home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
+CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/testbar.dir/all
+all: CMakeFiles/image.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/testbar.dir/clean
+clean: CMakeFiles/image.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/testbar.dir
+# Target rules for target CMakeFiles/image.dir
 
 # All Build rule for target.
-CMakeFiles/testbar.dir/all:
-	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/depend
-	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target testbar"
-.PHONY : CMakeFiles/testbar.dir/all
+CMakeFiles/image.dir/all:
+	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/depend
+	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build/CMakeFiles --progress-num=1,2 "Built target image"
+.PHONY : CMakeFiles/image.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/testbar.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testbar.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 0
-.PHONY : CMakeFiles/testbar.dir/rule
+CMakeFiles/image.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/image.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build/CMakeFiles 0
+.PHONY : CMakeFiles/image.dir/rule
 
 # Convenience name for target.
-testbar: CMakeFiles/testbar.dir/rule
+image: CMakeFiles/image.dir/rule
 
-.PHONY : testbar
+.PHONY : image
 
 # clean rule for target.
-CMakeFiles/testbar.dir/clean:
-	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/clean
-.PHONY : CMakeFiles/testbar.dir/clean
+CMakeFiles/image.dir/clean:
+	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/clean
+.PHONY : CMakeFiles/image.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

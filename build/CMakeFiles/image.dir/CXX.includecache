@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/image.cpp
+/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/image.cpp
 iostream
 -
 cmath

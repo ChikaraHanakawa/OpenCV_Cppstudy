@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy
+CMAKE_SOURCE_DIR = /home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build
+CMAKE_BINARY_DIR = /home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build/CMakeFiles /home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testbar
+# Target rules for targets named image
 
 # Build rule for target.
-testbar: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testbar
-.PHONY : testbar
+image: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 image
+.PHONY : image
 
 # fast build rule for target.
-testbar/fast:
-	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/build
-.PHONY : testbar/fast
+image/fast:
+	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
+.PHONY : image/fast
 
-testbar.o: testbar.cpp.o
+image.o: image.cpp.o
 
-.PHONY : testbar.o
+.PHONY : image.o
 
 # target to build an object file
-testbar.cpp.o:
-	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/testbar.cpp.o
-.PHONY : testbar.cpp.o
+image.cpp.o:
+	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.o
+.PHONY : image.cpp.o
 
-testbar.i: testbar.cpp.i
+image.i: image.cpp.i
 
-.PHONY : testbar.i
+.PHONY : image.i
 
 # target to preprocess a source file
-testbar.cpp.i:
-	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/testbar.cpp.i
-.PHONY : testbar.cpp.i
+image.cpp.i:
+	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.i
+.PHONY : image.cpp.i
 
-testbar.s: testbar.cpp.s
+image.s: image.cpp.s
 
-.PHONY : testbar.s
+.PHONY : image.s
 
 # target to generate assembly for a file
-testbar.cpp.s:
-	$(MAKE) -f CMakeFiles/testbar.dir/build.make CMakeFiles/testbar.dir/testbar.cpp.s
-.PHONY : testbar.cpp.s
+image.cpp.s:
+	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.s
+.PHONY : image.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... testbar"
-	@echo "... testbar.o"
-	@echo "... testbar.i"
-	@echo "... testbar.s"
+	@echo "... image"
+	@echo "... image.o"
+	@echo "... image.i"
+	@echo "... image.s"
 .PHONY : help
 
 

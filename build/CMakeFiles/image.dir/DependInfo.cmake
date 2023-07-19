@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/image.cpp" "/home/chikara/c++/opencv-4.5.5/OpenCV_Cppstudy/build/CMakeFiles/image.dir/image.cpp.o"
+  "/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/image.cpp" "/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build/CMakeFiles/image.dir/image.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
