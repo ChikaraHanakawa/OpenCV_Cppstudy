@@ -6,12 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/gamma.cpp
+/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/qt-opencv.cpp
 iostream
 -
-cmath
--
 opencv2/opencv.hpp
+-
+QPixmap
 -
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp

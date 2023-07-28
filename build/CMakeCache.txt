@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=image
+CMAKE_PROJECT_NAME:STATIC=gui-opencv
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -219,7 +219,7 @@ SORCE_CODE:UNINITIALIZED=rs-mouse
 SOUCE_CODE:UNINITIALIZED=shape
 
 //Target object name
-SOURCE_CODE:STRING=image
+SOURCE_CODE:STRING=gui-opencv
 
 //Value Computed by CMake
 binary_image_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build
@@ -270,6 +270,12 @@ gaussian_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build
 gaussian_SOURCE_DIR:STATIC=/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy
 
 //Value Computed by CMake
+gui-opencv_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build
+
+//Value Computed by CMake
+gui-opencv_SOURCE_DIR:STATIC=/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy
+
+//Value Computed by CMake
 image_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build
 
 //Value Computed by CMake
@@ -298,6 +304,12 @@ operator_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build
 
 //Value Computed by CMake
 operator_SOURCE_DIR:STATIC=/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy
+
+//Value Computed by CMake
+qt-opencv_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build
+
+//Value Computed by CMake
+qt-opencv_SOURCE_DIR:STATIC=/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy
 
 //Value Computed by CMake
 realsense_BINARY_DIR:STATIC=/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build

@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named image
+# Target rules for targets named gui-opencv
 
 # Build rule for target.
-image: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 image
-.PHONY : image
+gui-opencv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gui-opencv
+.PHONY : gui-opencv
 
 # fast build rule for target.
-image/fast:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
-.PHONY : image/fast
+gui-opencv/fast:
+	$(MAKE) -f CMakeFiles/gui-opencv.dir/build.make CMakeFiles/gui-opencv.dir/build
+.PHONY : gui-opencv/fast
 
-image.o: image.cpp.o
+gui-opencv.o: gui-opencv.cpp.o
 
-.PHONY : image.o
+.PHONY : gui-opencv.o
 
 # target to build an object file
-image.cpp.o:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.o
-.PHONY : image.cpp.o
+gui-opencv.cpp.o:
+	$(MAKE) -f CMakeFiles/gui-opencv.dir/build.make CMakeFiles/gui-opencv.dir/gui-opencv.cpp.o
+.PHONY : gui-opencv.cpp.o
 
-image.i: image.cpp.i
+gui-opencv.i: gui-opencv.cpp.i
 
-.PHONY : image.i
+.PHONY : gui-opencv.i
 
 # target to preprocess a source file
-image.cpp.i:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.i
-.PHONY : image.cpp.i
+gui-opencv.cpp.i:
+	$(MAKE) -f CMakeFiles/gui-opencv.dir/build.make CMakeFiles/gui-opencv.dir/gui-opencv.cpp.i
+.PHONY : gui-opencv.cpp.i
 
-image.s: image.cpp.s
+gui-opencv.s: gui-opencv.cpp.s
 
-.PHONY : image.s
+.PHONY : gui-opencv.s
 
 # target to generate assembly for a file
-image.cpp.s:
-	$(MAKE) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/image.cpp.s
-.PHONY : image.cpp.s
+gui-opencv.cpp.s:
+	$(MAKE) -f CMakeFiles/gui-opencv.dir/build.make CMakeFiles/gui-opencv.dir/gui-opencv.cpp.s
+.PHONY : gui-opencv.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... image"
-	@echo "... image.o"
-	@echo "... image.i"
-	@echo "... image.s"
+	@echo "... gui-opencv"
+	@echo "... gui-opencv.o"
+	@echo "... gui-opencv.i"
+	@echo "... gui-opencv.s"
 .PHONY : help
 
 
