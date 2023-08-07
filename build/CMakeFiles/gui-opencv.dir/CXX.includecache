@@ -11,6 +11,10 @@ iostream
 -
 cmath
 -
+sstream
+-
+iomanip
+-
 opencv2/opencv.hpp
 -
 

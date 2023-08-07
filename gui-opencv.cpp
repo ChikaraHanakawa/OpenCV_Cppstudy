@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cmath>
+#include <sstream>
+#include <iomanip>
 #include <opencv2/opencv.hpp>
 
 int main(int argc, char **argv){
@@ -9,10 +11,9 @@ int main(int argc, char **argv){
     std::cout << "error" << std::endl;
     return 0;
   }
-  std::string win_src = "src";
+  std::string win_src = "Video";
   cv::namedWindow(win_src, cv::WINDOW_AUTOSIZE);
   int num = 1;
-  std::string tes = "/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build/image%d.png", num;
 
   while(1){
     capture >> img_src;
@@ -24,10 +25,18 @@ int main(int argc, char **argv){
       cv::imwrite(ss.str(), img_src);
       num++;
     }
+    if(key == 'e'){
+      static int i = 0;
+      std::ostringstream oss;
+      oss << std::setfill('0') << std::setw(3) << i++;
+      cv::Mat image = cv::imread( "/home/chikara/c++/opencv-4.7.0/OpenCV_Cppstudy/build/image" + oss.str() + ".png" );
+      if(image.empty()){
+        break;
+      }
+      cv::imshow("Capture-image", image);
+    }
     if(key == 'q') break;
   }
   capture.release();
-  cv::Mat testPicture = cv::imread(tes, 1);
-  cv::imshow("SavePicture", testPicture);
   return 0;
 }
